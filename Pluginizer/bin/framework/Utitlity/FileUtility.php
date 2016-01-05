@@ -25,7 +25,7 @@ class FileUtility
 
 		$file_extension = $file_name_exploded[count($file_name_exploded) - 1];
 
-		return strtolower($file_extension);
+		return $file_extension;
 	}
 }
 ?>
