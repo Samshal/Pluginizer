@@ -3,6 +3,8 @@ namespace Pluginizer\Framework;
 /**
  * Pluginizer\Framework\View: Helper Class for simplifying most tasks within the custom view's of all modules
  *
+ * Please note that this class provides no public interface for construction, so it can't be
+ * instanticated using the 'new' keyword
  * It has `static` methods for loading images, scripts, styles and what have you from their absolute urls into
  * an included file.
  *
@@ -125,6 +127,11 @@ class View
 		$style_uri .= DIRECTORY_SEPARATOR.$script_name;
 
 		return View::URI($style_uri);
+	}
+
+	public static function File(string $file_path_plus_name)
+	{
+		
 	}
 }
 ?>
