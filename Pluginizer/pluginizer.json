@@ -1,1 +1,15 @@
-[pluginizer: { }]
+{
+	"pluginizer":
+	{
+
+	},
+
+	"Namespaces" :
+	{
+		"ROOT" :
+		{
+			"Pluginizer\\Modules\\":"/modules",
+			"Pluginizer\\Framework\\":"/bin/framework"
+		}
+	}
+}
