@@ -11,6 +11,8 @@
 
 namespace Plug\Framework\ConfigParser;
 
+use Plug\Framework\Utitlity\FileUtility as FileUtility;
+
 class ConfigParser
 {
 	private $config_file;
@@ -27,7 +29,7 @@ class ConfigParser
 
 	public function parse()
 	{
-		
+		$file_type = FileUtility::getExtension($this->config_file);
 	}
 }
 ?>
